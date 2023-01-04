@@ -2,3 +2,5 @@ README.md
 .gitignore
 backup
 backup/**
+vscode
+vscode/**

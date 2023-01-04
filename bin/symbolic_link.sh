@@ -20,5 +20,6 @@ function symbolic_link() {
     powershell.exe -command start-process powershell -verb runas $command
 }
 
-symbolic_link "vscode/settings.json" "/mnt/c/Users/shoma/AppData/Roaming/Code/User/settings.json"
-symbolic_link "vscode/keybindings.json" "/mnt/c/Users/shoma/AppData/Roaming/Code/User/keybindings.json"
+user_path=$(wslpath "$(wslvar USERPROFILE)")
+symbolic_link "vscode/settings.json" "${user_path}/AppData/Roaming/Code/User/settings.json"
+symbolic_link "vscode/keybindings.json" "${user_path}/AppData/Roaming/Code/User/keybindings.json"

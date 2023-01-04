@@ -1,0 +1,47 @@
+[ -z "$PS1" ] && return
+
+# history settings
+HISTCONTROL=ignoreboth
+HISTSIZE=1000
+HISTFILESIZE=2000
+
+shopt -s histappend
+shopt -s checkwinsize
+
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
+
+# color prompt
+case "$TERM" in
+xterm-color | *-256color) color_prompt=yes ;;
+esac
+
+if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+        color_prompt=yes
+    else
+        color_prompt=
+    fi
+fi
+
+if [ "$color_prompt" = yes ]; then
+    emoji=('\U1F97A' '\U1F972' '\U1F611' '\U1F638' '\U1F424' '\U1F621')
+    PS1='\[$(tput setaf 2)\]\u'$(echo -e "${emoji[($RANDOM%6)]}")'\[$(tput setaf 1)\]\[$(git rev-parse --abbrev-ref HEAD 2>/dev/null | xargs -i echo [{}])\]\[$(tput setaf 4)\]\w\[$(tput sgr0)\]\n> '
+else
+    PS1='\u@\w\$ '
+fi
+unset color_prompt
+
+# Define your own aliases here.
+[ -f ~/.bash_aliases ] && . ~/.bash_aliases
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if ! shopt -oq posix; then
+    if [ -f /usr/share/bash-completion/bash_completion ]; then
+        . /usr/share/bash-completion/bash_completion
+    elif [ -f /etc/bash_completion ]; then
+        . /etc/bash_completion
+    fi
+fi

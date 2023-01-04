@@ -1,0 +1,8 @@
+# clipboard コマンド
+alias pbcopy='xsel --clipboard --input'
+alias pbpaste='xsel --clipboard --output'
+
+alias u='cd ../'
+
+# WSL2
+alias expl='explorer.exe'

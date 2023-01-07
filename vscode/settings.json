@@ -106,6 +106,7 @@
         "editor.codeActionsOnSave": {
             "source.organizeImports": true,
         },
+        "editor.formatOnType": true,
     },
     "[shellscript]": {
         "editor.defaultFormatter": "foxundermoon.shell-format"

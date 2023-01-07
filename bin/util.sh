@@ -43,3 +43,10 @@ function backup() {
     mv $2 backup_dir
   fi
 }
+
+function exists_package() {
+  if test $(which $1); then
+    echo already installed $1.
+    exit 0
+  fi
+}

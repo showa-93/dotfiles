@@ -1,8 +1,6 @@
 #!/bin/bash
-
-exists_package docker
-
 # https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
 sudo apt install \
   ca-certificates \
   curl \

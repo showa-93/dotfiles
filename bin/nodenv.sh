@@ -1,8 +1,5 @@
 #!/bin/bash
-. bin/util.sh
 # https://github.com/nodenv/nodenv
-
-exists_package nodenv
 
 git clone https://github.com/nodenv/nodenv.git ~/.nodenv
 cd ~/.nodenv && src/configure && make -C src

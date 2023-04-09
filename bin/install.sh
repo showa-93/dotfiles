@@ -19,3 +19,19 @@ if is_linux || is_wsl; then
   # gcloud CLI
   snap install google-cloud-cli --classic
 fi
+
+if exists_package go; then
+  . bin/go.sh
+fi
+
+if exists_package nodenv; then
+  . bin/nodenv.sh
+fi
+
+if exists_package pyenv; then
+  . bin/pyenv.sh
+fi
+
+if exists_package docker; then
+  . bin/docker.sh
+fi

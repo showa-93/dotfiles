@@ -47,6 +47,7 @@ function backup() {
 function exists_package() {
   if test $(which $1); then
     echo already installed $1.
-    exit 0
+    return 1
   fi
+  return 0
 }

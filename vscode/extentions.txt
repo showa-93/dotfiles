@@ -5,6 +5,7 @@ christian-kohler.path-intellisense
 donjayamanne.githistory
 eamodio.gitlens
 foxundermoon.shell-format
+github.vscode-github-actions
 golang.go
 Gruntfuggly.todo-tree
 hbenl.vscode-test-explorer

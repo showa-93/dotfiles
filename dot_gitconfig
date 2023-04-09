@@ -1,0 +1,11 @@
+[user]
+	email = shumai.1215.2018@gmail.com
+	name = showa-93
+[core]
+	editor = vim
+[init]
+	defaultBranch = main
+
+[alias]
+	pushf = push –force-with-lease
+	commita = !git commit --amend --date \"$(date -R)\"

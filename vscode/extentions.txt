@@ -2,6 +2,7 @@
 amazonwebservices.aws-toolkit-vscode
 aws-scripting-guy.cform
 christian-kohler.path-intellisense
+DavidAnson.vscode-markdownlint
 donjayamanne.githistory
 eamodio.gitlens
 foxundermoon.shell-format
@@ -9,6 +10,7 @@ github.vscode-github-actions
 golang.go
 Gruntfuggly.todo-tree
 hbenl.vscode-test-explorer
+ICS.japanese-proofreading
 jebbs.plantuml
 jrebocho.vscode-random
 kddejong.vscode-cfn-lint
@@ -26,6 +28,7 @@ ms-vscode.makefile-tools
 ms-vscode.test-adapter-converter
 pizzacat83.codic
 redhat.vscode-yaml
+rust-lang.rust-analyzer
 shardulm94.trailing-spaces
 tomoki1207.pdf
 yzhang.markdown-all-in-one

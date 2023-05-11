@@ -1,4 +1,5 @@
 {
+    "security.allowedUNCHosts": ["wsl.localhost"],
     "workbench.colorTheme": "Eva Dark",
     "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "newUntitledFile",

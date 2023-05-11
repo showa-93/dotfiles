@@ -19,6 +19,10 @@ eval "$(pyenv init -)"
 export SYSTEMD_EDITOR="/bin/vi"
 export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
 
+# VS Code
+# https://code.visualstudio.com/docs/setup/windows#_working-with-unc-paths
+export NODE_UNC_HOST_ALLOWLIST=wsl.localhost
+
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi

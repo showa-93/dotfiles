@@ -4,7 +4,8 @@
 sudo apt update -y
 
 # Install VS Code extensions
-cat vscode/extentions.txt | xargs -i code --install-extension {}
+cat vscode/extensions.txt | xargs -i code --install-extension {}
+cat vscode/extensions.local.txt | xargs -i PowerShell.exe -Command "code --install-extension {}"
 
 if is_linux || is_wsl; then
   sudo apt install jq

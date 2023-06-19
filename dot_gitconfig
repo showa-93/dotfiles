@@ -7,5 +7,5 @@
 	defaultBranch = main
 
 [alias]
-	pushf = push –force-with-lease
+	pushf = push --force-with-lease --force-if-includes
 	commita = !git commit --amend --date \"$(date -R)\"

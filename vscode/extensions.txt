@@ -11,9 +11,11 @@ golang.go
 Gruntfuggly.todo-tree
 hbenl.vscode-test-explorer
 ICS.japanese-proofreading
+James-Yu.latex-workshop
 jebbs.plantuml
 jrebocho.vscode-random
 kddejong.vscode-cfn-lint
+moshfeu.diff-merge
 ms-azuretools.vscode-docker
 MS-CEINTL.vscode-language-pack-ja
 ms-python.isort

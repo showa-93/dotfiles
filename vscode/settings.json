@@ -7,7 +7,6 @@
     "vsicons.dontShowNewVersionMessage": true,
     "extensions.ignoreRecommendations": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
-    "window.zoomLevel": 0,
     "go.useLanguageServer": true,
     "go.languageServerFlags": [
         "-rpc.trace", // for more detailed debug logging

@@ -9,6 +9,7 @@
     "vsicons.dontShowNewVersionMessage": true,
     "extensions.ignoreRecommendations": false,
     "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.fontFamily": "CodeNewRoman Nerd Font",
     "go.useLanguageServer": true,
     "go.languageServerFlags": [
         "-rpc.trace", // for more detailed debug logging

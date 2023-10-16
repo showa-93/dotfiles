@@ -26,7 +26,7 @@ fi
 
 if [ "$color_prompt" = yes ]; then
     emoji=('\U1F97A' '\U1F972' '\U1F611' '\U1F638' '\U1F424' '\U1F621')
-    PS1='\[$(tput setaf 2)\]\u'$(echo -e "${emoji[($RANDOM%6)]}")'\[$(tput setaf 1)\]\[$(git rev-parse --abbrev-ref HEAD 2>/dev/null | xargs -i echo [{}])\]\[$(tput setaf 4)\]\w\[$(tput sgr0)\]\n> '
+    PS1='\[$(tput setaf 2)\]\u'$(echo -e "${emoji[($RANDOM % 6)]}")'\[$(tput setaf 1)\]\[$(git rev-parse --abbrev-ref HEAD 2>/dev/null | xargs -i echo [{}])\]\[$(tput setaf 4)\]\w\[$(tput sgr0)\]\n> '
 else
     PS1='\u@\w\$ '
 fi
@@ -45,3 +45,32 @@ if ! shopt -oq posix; then
         . /etc/bash_completion
     fi
 fi
+
+# If not running interactively, don't do anything
+case $- in
+*i*) ;;
+*) return ;;
+esac
+
+# Path to the bash it configuration
+export BASH_IT="/home/shoma/.bash_it"
+
+# Lock and Load a custom theme file.
+# Leave empty to disable theming.
+# location /.bash_it/themes/
+export BASH_IT_THEME='oh-my-posh'
+
+# Your place for hosting Git repos. I use this for private repos.
+export GIT_HOSTING='git@git.domain.com'
+
+# Don't check mail when opening terminal.
+unset MAILCHECK
+
+# Change this to your console based IRC client of choice.
+export IRC_CLIENT='irssi'
+
+# Set this to false to turn off version control status checking within the prompt for all themes
+export SCM_CHECK=true
+
+# Load Bash It
+source "$BASH_IT"/bash_it.sh

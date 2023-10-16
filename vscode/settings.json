@@ -1,5 +1,7 @@
 {
-    "security.allowedUNCHosts": ["wsl.localhost"],
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
     "workbench.colorTheme": "Eva Dark",
     "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "newUntitledFile",
@@ -81,7 +83,6 @@
         "!Split",
         "!Split sequence"
     ],
-    "python.formatting.provider": "black",
     "[python]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
@@ -102,9 +103,18 @@
             "strings": "off",
             "other": "off"
         },
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+    },
+    "markdownlint.config": {
+        "MD033": false,
     },
     "errorLens.excludeBySource": [
         "compiler(UndeclaredName)"
     ],
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "python.terminal.activateEnvironment": false,
+    "hediet.vscode-drawio.resizeImages": null,
+    "hediet.vscode-drawio.theme": "Kennedy",
+    "html.format.enable": false,
 }

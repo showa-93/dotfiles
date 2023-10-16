@@ -10,13 +10,16 @@ felipe-mendes.slack-theme
 fisheva.eva-theme
 golang.go
 Gruntfuggly.todo-tree
+hediet.vscode-drawio
 IBM.output-colorizer
 jebbs.plantuml
 jpoissonnier.vscode-styled-components
+mikestead.dotenv
 ModoNoob.vscode-hipster-theme
 ms-azuretools.vscode-docker
 MS-CEINTL.vscode-language-pack-ja
 ms-dotnettools.csharp
+ms-dotnettools.vscode-dotnet-runtime
 ms-toolsai.jupyter-keymap
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-wsl

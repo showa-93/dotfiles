@@ -1,4 +1,5 @@
 766b.go-outliner
+antfu.browse-lite
 christian-kohler.path-intellisense
 dbaeumer.vscode-eslint
 donjayamanne.githistory

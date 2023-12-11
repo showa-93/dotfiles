@@ -7,6 +7,7 @@ donjayamanne.githistory
 eamodio.gitlens
 ecmel.vscode-html-css
 foxundermoon.shell-format
+genieai.chatgpt-vscode
 github.vscode-github-actions
 golang.go
 GrapeCity.gc-excelviewer
@@ -42,3 +43,4 @@ tamasfe.even-better-toml
 tomoki1207.pdf
 tsutsu3.markdown-named-codeblocks
 yzhang.markdown-all-in-one
+ziglang.vscode-zig

@@ -6,6 +6,17 @@
 	quotepath = false
 [init]
 	defaultBranch = main
+[rebase]
+	autosquash = true
+	updateRefs = true
+[fsck]
+	object = true
+[transfer]
+	fsckobjects = true
+[fetch]
+	fsckobjects = true
+[receive]
+	fsckobjects = true
 
 [alias]
 	pushf = push --force-with-lease --force-if-includes

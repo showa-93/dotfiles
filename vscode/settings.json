@@ -2,8 +2,6 @@
     "security.allowedUNCHosts": [
         "wsl.localhost"
     ],
-    // **** workbench ****
-    "workbench.activityBar.location": "top",
     "workbench.colorTheme": "Eva Dark",
     "workbench.editor.enablePreview": false,
     "workbench.startupEditor": "newUntitledFile",
@@ -20,6 +18,7 @@
         "**/.factorypath": true
     },
     // **** editor ****
+    "editor.tabSize": 2,
     "editor.suggestSelection": "first",
     "editor.inlineSuggest.enabled": true,
     "editor.bracketPairColorization.enabled": true,
@@ -54,6 +53,7 @@
     "go.lintFlags": [
         "--fast"
     ],
+    "go.testTimeout": "60s",
     "gopls": {
         // Add parameter placeholders when completing a function.
         "usePlaceholders": true,
@@ -126,5 +126,17 @@
         "MD033": false,
     },
     "html.format.enable": false,
-    "genieai.openai.model": "gpt-4",
+    "[go][python]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"
+        }
+    },
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "[sql]": {
+        "editor.tabSize": 4
+    },
+    "remote.autoForwardPortsSource": "hybrid",
+    "window.zoomLevel": -1,
 }

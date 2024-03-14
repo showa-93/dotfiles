@@ -34,7 +34,7 @@
     "[go]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true,
+            "source.organizeImports": "explicit"
         },
         // Optional: Disable snippets, as they conflict with completion ranking.
         "editor.snippetSuggestions": "none",
@@ -65,7 +65,8 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "[yaml]": {
-        "editor.tabSize": 2
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "redhat.vscode-yaml"
     },
     "yaml.customTags": [
         "!And",
@@ -99,7 +100,7 @@
     "[python]": {
         "editor.formatOnSave": true,
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true,
+            "source.organizeImports": "explicit"
         },
         "editor.formatOnType": true,
     },
@@ -139,4 +140,8 @@
     },
     "remote.autoForwardPortsSource": "hybrid",
     "window.zoomLevel": -1,
+    "[jsonc]": {
+        "editor.defaultFormatter": "biomejs.biome"
+    },
+    "genieai.enableConversationHistory": true,
 }

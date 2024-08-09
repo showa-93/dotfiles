@@ -4,3 +4,4 @@ backup
 backup/**
 vscode
 vscode/**
+Makefile

@@ -193,9 +193,14 @@
           "background": "#83769c",
           "foreground": "#262626",
           "invert_powerline": true,
-          "leading_diamond": "\ue0b2",
-          "style": "diamond",
-          "template": " {{ .FormattedMs }}\ue0b2",
+          "style": "powerline",
+          "powerline_symbol": "\ue0b2",
+          "properties": {
+            "threshold": 500,
+            "style": "austin",
+            "always_enabled": false
+          },
+          "template": " {{ .FormattedMs }} ",
           "type": "executiontime"
         },
         {

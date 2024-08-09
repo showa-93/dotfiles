@@ -19,7 +19,7 @@ sudo apt install unzip
 sudo apt install -y language-pack-en
 git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
 ~/.bash_it/install.sh
-curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
+curl -s https://ohmyposh.dev/install.sh | bash -s
 
 # フォントのインストール
 Powershell.exe -Command winget install JanDeDobbeleer.OhMyPosh

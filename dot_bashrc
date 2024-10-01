@@ -76,3 +76,6 @@ export SCM_CHECK=true
 source "$BASH_IT"/bash_it.sh
 
 eval "$(oh-my-posh init bash --config ~/.theme.omp.json)"
+
+# GPG_TTY
+export GPG_TTY=$(tty)

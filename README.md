@@ -12,6 +12,7 @@ initialize
 chezmoi init git@github.com:showa-93/dotfiles.git
 
 ./bin/install.sh
+export BW_SESSION=$(bw unlock --raw)
 chezmoi apply
 
 # bash-itの導入
@@ -34,4 +35,11 @@ oh-my-posh font install
 
 ```code
 sudo systemctl disable --now systemd-networkd.service
+```
+
+## 更新したら
+
+```bash
+export BW_SESSION=$(bw unlock --raw)
+chezmoi apply
 ```

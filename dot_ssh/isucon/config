@@ -1,0 +1,9 @@
+Host isucon1
+    IdentityFile ~/.ssh/isucon.pem
+    User isucon
+    HostName dummy
+
+Host isuconb
+    IdentityFile ~/.ssh/isucon.pem
+    User isucon
+    HostName dummy
